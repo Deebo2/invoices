@@ -1,0 +1,16 @@
+DATABASE PLANNING
+-----------------
+clients:
+id,name ,email ,address ,mobile ,created_at ,updated_at
+-----
+items //for products and sevices :
+created_at ,updated_at ,id ,name ,description ,type(product / sevice) ,price ,stock
+-----
+invoices:
+created_at ,updated_at ,id ,client_id ,amount ,payment_mode ,payment_reference 
+------
+invoice_items :
+created_at ,updated_at ,id ,invoice_id ,item_id ,item_price ,item_quantity ,total_price
+------
+items-stock :
+id ,item_id ,stock_in ,stock_out ,created ,updated
